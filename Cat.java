@@ -17,7 +17,7 @@ public double getWeight(){
     return weight;
 }
 
-public static void meow(){
+public void meow(){
 System.out.println("Meow!");
 }
 }

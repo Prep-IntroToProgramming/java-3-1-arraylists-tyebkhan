@@ -21,8 +21,8 @@ public class Cat {
     }
 
     public void meow(){
-        double rng = Math.random()*10;
-        if(rng<=2.5){
+        double rng = Math.random();
+        if(rng<=.25){
             System.out.println("Grrrrr");
         }else{
             System.out.println("Meow!");

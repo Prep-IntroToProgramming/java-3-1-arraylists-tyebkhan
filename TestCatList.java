@@ -9,12 +9,10 @@ public class TestCatList{
             System.out.println("Enter the name of cat " + (i+1));
             CatList.get(i).setName();
         }
-        for(Cat i:CatList){
-            int x=0;
-            CatList.get(x).setWeight(Math.random()*10+5);
-            System.out.println(CatList.get(x).getWeight() + " " + CatList.get(x).getName());
-            CatList.get(x).meow();
-            x = x+1;
+        for(Cat c:CatList){
+            c.setWeight(Math.random()*10+5);
+            System.out.println(c.getWeight() + " " + c.getName());
+            c.meow();
         }
     }
 }

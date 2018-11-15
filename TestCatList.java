@@ -5,10 +5,10 @@ public class TestCatList{
         for(int i = 1; i<5; i++){
             CatList.add(new Cat());
         }
-        CatList.get(0).setName("Cat0");
-        CatList.get(1).setName("Cat1");
-        CatList.get(2).setName("Cat2");
-        CatList.get(3).setName("Cat3");
+        for(int i = 0; i<CatList.size(); i++){
+            System.out.println("Enter the name of cat " + (i+1));
+            CatList.get(i).setName();
+        }
         for(Cat i:CatList){
             int x=0;
             CatList.get(x).setWeight(Math.random()*10+5);

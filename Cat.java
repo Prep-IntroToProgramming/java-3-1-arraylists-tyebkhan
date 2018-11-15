@@ -1,9 +1,11 @@
+import java.util.*;
 
 public class Cat {
     private String name;
     private double weight; 
-    public void setName(String aname){
-        name = aname;
+    public void setName(){
+        Scanner input = new Scanner(System.in);
+        name = input.nextLine().toString();
     }
 
     public void setWeight(double aweight){
@@ -13,7 +15,7 @@ public class Cat {
     public String getName(){
         return name;
     }
-
+    
     public double getWeight(){
         return weight;
     }
